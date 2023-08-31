@@ -1,0 +1,187 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(33, 25, 25);
+}
+#root{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: fit-content;
+    background-color: rgb(33, 25, 25);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 320px;
+    height: 440px;
+    background-color: rgba(240, 248, 255, 0.495);
+    border-radius: 10px;
+}
+
+input{
+    width: 300px;
+    height: 40px;
+    font-size: 25px;
+}
+input::placeholder{
+    font-size: 25px;
+}
+
+button{
+    width: 100px;
+    height: 40px;
+    font-size: 25px;
+}
+
+textarea{
+    font-size: 25px;
+    resize: none;
+    width: 300px;
+    height: 200px;
+}
+
+textarea::placeholder{
+    font-size: 25px;
+}
+
+.admin{
+    z-index: 3;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+
+  h1{
+    color: aliceblue;
+    margin: 40px;
+    font-size: 60px;
+  }
+  main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 100%;
+    height: fit-content;
+  }
+
+  img{
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+  }
+
+  .avProdListCon{
+    background-color: rgba(240, 248, 255, 0.495);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    color: wheat;
+    margin: 40px;
+    border-radius: 10px;
+}
+#root>div>div{
+    margin: 20px;
+    border: 2px solid black;
+}
+p{
+    font-size: 20px;
+}
+
+.orders-con{
+    background-color: rgba(240, 248, 255, 0.495);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(45, 42, 38);
+    border-radius: 10px;
+    width: 100%;
+    height: fit-content;
+    margin: 40px;
+}
+
+.order-card{
+    width: 300px;
+    height: 500px;
+}
+
+.customer:last-child{
+    word-break: break-all;
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}

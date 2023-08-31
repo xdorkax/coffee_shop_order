@@ -1,0 +1,15 @@
+{
+  "name": "coffee-ordering-app",
+  "version": "1.0.0",
+  "description": "A coffee ordering application with Node.js backend and UI",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "body-parser": "^1.19.0",
+    "express-fileupload": "^1.2.1"
+  }
+}
